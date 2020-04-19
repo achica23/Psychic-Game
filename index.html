@@ -1,61 +1,29 @@
 <!DOCTYPE html>
-<html lang="en-us">
-  <head>
-    <meta charset="UTF-8">
-    <title>
-      Data Types, User Input, Conditional Logic
-    </title>
-  </head>
-  <body>
-    <script type="text/javascript">
+<html lang="en">
 
-      var userName = prompt("What's your name?");
-      var confirmCats = confirm("Do you like cats?");
+<head>
+  <meta charset="UTF-8">
+  <title>Psychic game</title>
+  <link>
+</head>
 
-      var petName = "Meeses";
-      var petType = "Tuxedo Cat";
-      var petAge = 5;
-      var petIsCat = true;
+<body>
 
-      if (confirmCats) {
-        alert(petName + " " + petType + " " + petAge);
-      }
-      else {
-        alert("You don't get my cat's information");
-      }
+  <h1>The psychic game</h1>
 
-      if (petIsCat) {
-        alert("My pet is a cat");
-      }
-      else {
-        alert("My pet is not a cat");
-      }
+  <h2>Guess the letter that the computer is thinking.</h2>
 
-      if (petAge !== 7) {
-        alert("My pet is not 7 years old");
-      }
+  <p>Wins: <span id="numWins"></span></p>
 
-      if (petAge === 5) {
-        alert("My pet is 5 years old");
-      }
-      else if (petAge < 5) {
-        alert("My pet is less than 5 years old");
-      }
-      else if (petAge > 5) {
-        alert("My pet is older than 5 years old");
-      }
+  <p>Loses:</p>
 
-      // document.write() overwrites the entire page. We don't normally use this, but we will today for simplicity
-      document.write("Welcome to our page " + userName);
+  <p>Guesses left: <span id="numGuesses"></span></p>
 
-      var catAge = prompt("How old is your cat?");
+  <p>Your guesses so far: <span id="playersGuess"></span></p>
 
-      // Won't work as expected
-      alert(catAge + 2);
 
-      // Works as expected
-      alert(parseInt(catAge) + 2);
+  <script src="/Users/ashleyhaven/Desktop/Psychic-Game/assets/javascript/game.js"></script>
 
-    </script>
-  </body>
+</body>
+
 </html>
